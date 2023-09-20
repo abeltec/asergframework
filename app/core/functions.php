@@ -8,7 +8,7 @@ function split_url(){
     return explode("/", $url);
 }
 
-
+// This function is for grabing the single url array from the $APP["URL"]
 function URL($key = ""){
     global $APP;
 
