@@ -1,4 +1,4 @@
 <?php 
 
 
-echo "Hellow world this is php testing for git baby!!";
+echo "Hellow world this is php tesng for git baby!";
