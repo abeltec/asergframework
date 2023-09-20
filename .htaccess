@@ -1,0 +1,13 @@
+# This is folder only allow few files to be accessed 
+Options -Indexes 
+
+RewriteEngine On 
+
+RewriteRule ^(thunder)$ index.url?url=$1 [L,QSA]
+RewriteRule ^(thunder/)$ index.url?url=$1 [L,QSA]
+
+# Accepting loading the actual files and directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*) index.php?url=$1 [L,QSA]

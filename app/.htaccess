@@ -1,0 +1,4 @@
+# This is for the security issues so that it can help hackers to not 
+# enter into folder and dowload file easy.
+
+Deny from all

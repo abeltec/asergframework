@@ -1,0 +1,10 @@
+#deny access to all files except 
+#the index.php file, css and images files 
+
+<Files ~ "^.*">
+ Deny from all 
+</Files> 
+
+<Files ~ "^index\.php|css|js|.*\.pgn|.*\.jpg|.*\.jpeg|.*\.woff|.*\.woff2|.*\.tff|.*\.svg|.*\.gif|.*\.webp">
+    Allow from all
+</Files>
